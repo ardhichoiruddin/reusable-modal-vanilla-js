@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test FE Renos.id</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <button id="buttonShowModal1" style="cursor: pointer;">Show Modal 1</button>
+        <button id="buttonShowModal2" style="cursor: pointer;">Show Modal 2</button>
+    </div>
+    <div id="modal1"></div>
+    <div id="modal2"></div>
+    <script src="./js/index.js"></script>
+    <script>
+        
+        // start modal 1
+        const modal1 = new Modal({
+            id: 'modal1',
+            header: '<h1>Hello this is Modal 1</h1>',
+            body: ("<p>I'm baby af kale chips gluten-free yes plz. Edison bulb gochujang hammock organic heirloom chicharrones. Street art next level subway tile succulents vexillologist hashtag. Master cleanse leggings gentrify sriracha salvia blog vinyl normcore thundercats food truck man bun taiyaki trust fund hashtag mlkshk. Jean shorts mixtape blog fingerstache selfies. Poke fingerstache paleo master cleanse, hella jianbing cornhole thundercats pabst. Tilde YOLO man braid shoreditch vice hammock irony. I'm baby af kale chips gluten-free yes plz. Edison bulb gochujang hammock organic heirloom chicharrones. Street art next level subway tile succulents vexillologist hashtag. Master cleanse leggings gentrify sriracha salvia blog vinyl normcore thundercats food truck man bun taiyaki trust fund hashtag mlkshk. Jean shorts mixtape blog fingerstache selfies. Poke fingerstache paleo master cleanse, hella jianbing cornhole thundercats pabst. Tilde YOLO man braid shoreditch vice hammock irony. I'm baby af kale chips gluten-free yes plz. Edison bulb gochujang hammock organic heirloom chicharrones. Street art next level subway tile succulents vexillologist hashtag. Master cleanse leggings gentrify sriracha salvia blog vinyl normcore thundercats food truck man bun taiyaki trust fund hashtag mlkshk. Jean shorts mixtape blog fingerstache selfies. Poke fingerstache paleo master cleanse, hella jianbing cornhole thundercats pabst. Tilde YOLO man braid shoreditch vice hammock irony.</p>"),
+            footer: '<button onclick="modal1.close()">Button close in footer</button>'
+        });
+        const buttonShowModal1 = document.getElementById('buttonShowModal1');
+        buttonShowModal1.addEventListener('click', () => {
+            modal1.show()
+        }, false);
+        // end modal 1
+
+        // start modal 2
+        const modal2 = new Modal({
+            id: 'modal2',
+            header: '<h1>Hello this is Modal 2</h1>',
+            body: ("<p>I'm baby af kale chips gluten-free yes plz. Edison bulb</p>"),
+            footer: '<button onclick="modal2.close()">Button close in footer</button>'
+        });
+        const buttonShowModal2 = document.getElementById('buttonShowModal2');
+        buttonShowModal2.addEventListener('click', () => {
+            modal2.show()
+        }, false);
+        // end modal 2
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+  
+p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+  
+
+.container{
+    padding: 0 1rem;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__backDrop{
+    background-color: rgba(0, 0, 0, 0.516);
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal__box{
+    max-width: 240px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 9px 30px -1px rgba(0,0,0,0.53);
+    -webkit-box-shadow: 0px 9px 30px -1px rgba(0,0,0,0.53);
+    -moz-box-shadow: 0px 9px 30px -1px rgba(0,0,0,0.53);
+    position: relative;
+    z-index: 1100;
+}
+
+.modal__header{
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    padding-right: 3rem;
+    padding-left: 1.5rem;
+    position: relative;
+    background-color: #eaebff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal__header__closeButton{
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: rgb(251, 38, 38);
+    border: 1px solid rgb(251, 38, 38);
+}
+
+.modal__header__closeButton:active{
+    background-color: rgb(251, 78, 78);
+    border: 1px solid rgb(251, 78, 78);
+}
+
+.modal__body{
+    max-height: 300px;
+    overflow-x: auto;
+    padding: 1rem 1.5rem;
+}
+
+.modal__footer{
+    padding: 1.4rem 1.5rem 2rem;
+    background-color: #eaebff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.modal__bodyFrezee{
+    overflow: hidden;
+}
